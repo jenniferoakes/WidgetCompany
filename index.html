@@ -10,15 +10,15 @@
       <meta name='author' content='Jennifer Oakes'>
   </head>
   <body>
-    <header>
+    <header class='home'>
         <h1>Widget Co</h1>
         <nav>
             <ul>
                 <a href='#comments' class='fa fa-bars'></a>
-                <li><a href='#' class="fa fa-home" aria-hidden="true">Home</a></li>
-                <li><a href='#' class="fa fa-heart-o" aria-hidden="true">About Us</a></li>
-                <li><a href='#' class="fa fa-gift" aria-hidden="true">Our Widgets</a></li>
-                <li><a href='#' class="fa fa-paper-plane" aria-hidden="true">Place Order</a></li>
+                <li><a href='#home' class="fa fa-home" aria-hidden="true">Home</a></li>
+                <li><a href='#team' class="fa fa-heart-o" aria-hidden="true">About Us</a></li>
+                <li><a href='#widgets' class="fa fa-gift" aria-hidden="true">Our Widgets</a></li>
+                <li><a href='#order' class="fa fa-paper-plane" aria-hidden="true">Place Order</a></li>
             </ul>
         </nav>
     </header>
@@ -61,12 +61,27 @@
             Then you can order them from the form below.</p>
           <p class='alert alert-warning'>New widgets being added all the time!</p>
 
-        <ul>
-          <li><a class="glyphicon glyphicon-headphones" aria-hidden="true"></a></li>
-          <li><a class="glyphicon glyphicon-screenshot" aria-hidden="true"></a></li>
-          <li><a class="glyphicon glyphicon-dashboard" aria-hidden="true"></a></li>
-          <li><a class="glyphicon glyphicon-compressed" aria-hidden="true"></a></li>
-          <li><a class="glyphicon glyphicon-knight" aria-hidden="true"></a></li>
+        <ul class='glyphiconlist'>
+          <li>
+            <a class='glyphicon glyphicon-headphones' aria-hidden='true'></a>
+            <a class='badge badge-notify' aria-hidden='true'>24</a>
+          </li>
+          <li>
+            <a class="glyphicon glyphicon-screenshot" aria-hidden="true"></a>
+            <a class='badge badge-notify' aria-hidden='true'>10</a>
+          </li>
+          <li>
+            <a class="glyphicon glyphicon-dashboard" aria-hidden="true"></a>
+            <a class='badge badge-notify' aria-hidden='true'>33</a>
+          </li>
+          <li>
+            <a class="glyphicon glyphicon-compressed" aria-hidden="true"></a>
+            <a class='badge badge-notify' aria-hidden='true'>67</a>
+          </li>
+          <li>
+            <a class="glyphicon glyphicon-knight" aria-hidden="true"></a>
+            <a class='badge badge-notify' aria-hidden='true'>2</a>
+          </li>
         </ul>
 
         <nav aria-label="Page navigation">
@@ -92,7 +107,7 @@
       </aside>
     </section>
 
-    <section>
+    <section class='order'>
       <h2>Place Your Order</h2>
 
       <form action='http://requestb.in/11jvgtt1?inspect' method='posts'>
