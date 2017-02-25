@@ -15,16 +15,16 @@
         <nav>
             <ul>
                 <a href='#comments' class='fa fa-bars'></a>
-                <li><a href='#'>Home</a></li>
-                <li><a href='#'>About Us</a></li>
-                <li><a href='#'>Our Widgets</a></li>
-                <li><a href='#'>Place Order</a></li>
+                <li><a href='#' class="fa fa-home" aria-hidden="true">Home</a></li>
+                <li><a href='#' class="fa fa-heart-o" aria-hidden="true">About Us</a></li>
+                <li><a href='#' class="fa fa-gift" aria-hidden="true">Our Widgets</a></li>
+                <li><a href='#' class="fa fa-paper-plane" aria-hidden="true">Place Order</a></li>
             </ul>
         </nav>
     </header>
 
     <section class='intro'>
-      <h2>The Best Widgest</h2>
+      <h2>The Best Widgets</h2>
             <p>We have the best widgets. They're amazing. You'll love them.</p>
             <aside>
                 <input type='submit' value='Place Your Order Now!' class='btn btn-success'>
@@ -95,7 +95,7 @@
     <section>
       <h2>Place Your Order</h2>
 
-      <form action='link' method='posts'>
+      <form action='http://requestb.in/11jvgtt1?inspect' method='posts'>
 
       <fieldset class='ItemDetails'>
         <legend>Item Details</legend>
@@ -103,24 +103,24 @@
             <aside>
               <label>Item Type</label>
               <select>
+                <option>Select A Widget</option>
+                <option>Great Widget</option>
                 <option>Awesome Widget</option>
-                <option>Headphone Widget</option>
-                <option>Screenshot Widget</option>
-                <option>Dashboard Widget</option>
-                <option>Compressed Widget</option>
-                <option>Knight Widget</option>
+                <option>Widget of Cool</option>
+                <option>Amazing Widget</option>
+                <option>Widget Sweetness</option>
               </select>
             </aside>
 
             <aside>
               <label for='widgetquantity'>Quantity</label>
-              <input type='text' name='widgetquantity' id='widgetquantity' placeholder='4'>
+              <input type='text' name='widgetquantity' id='widgetquantity' placeholder='4' min='1' max='4'>
             </aside>
 
             <aside>
               <label>Gift wrap?</label>
-                <label><input type='radio' name='no' value='no'>No</label>
-                <label><input type='radio' name='yes' value='yes'>Yes</label>
+                <label><input type='radio' name='giftwrapbttn' value='no'>No</label>
+                <label><input type='radio' name='giftwrapbttn' value='yes'>Yes</label>
             </aside>
 
       </fieldset>
@@ -130,26 +130,26 @@
 
             <aside>
               <label for='fullName'>Full Name</label>
-              <input type='text' id='fullName' placeholder='Jordan Kasper'>
+              <input type='text' id='fullName' placeholder='John Doe' required>
             </aside>
 
             <aside>
               <label for='email'>Email</label>
-              <input type='email' id='email' placeholder='jordan@joe.com'>
+              <input type='email' id='email' placeholder='jordan@joe.com' required>
             </aside>
 
             <aside>
               <label for='creditcard'>Credit Card</label>
-              <input type='number' id='creditcard' placeholder='XXXX-XXXX-XXXX-XXXX'>
+              <input type='text' id='creditcard' placeholder='XXXX-XXXX-XXXX-XXXX' required>
             </aside>
 
             <aside>
               <label for='expiration'>Expiration</label>
-              <input type='text' id='expiration' placeholder='February 2017'>
+              <input type='month' id='expiration' placeholder='February 2017' required>
             </article>
         </fieldset>
 
-        <input type='submit' class='backbonegoeshere'>
+        <input type='submit' value='Confirm Order' class='btn btn-success'>
       </form>
 
       <a><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
