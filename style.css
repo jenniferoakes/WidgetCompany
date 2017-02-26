@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*header variables*/
+/*intro variables*/
+/*widget section variables */
+/*order section variables*/
+/*footer variables*/
+/*paragraph variables*/
 html, body, header, main, footer, section, aside, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0; }
@@ -9,6 +15,12 @@ ul {
 
 body {
   font-color: #333333; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
 
 header {
   background-color: #000000; }
@@ -45,15 +57,70 @@ nav:hover a {
   .btn-success:hover {
     background-color: #449d44; }
 
+.team h2 {
+  padding: 0.5em 0em;
+  text-align: center; }
+.team p {
+  margin: auto;
+  width: 95%;
+  margin: 0em 1em 1em 1em;
+  font-size: 0.9em; }
+.team h3 {
+  text-align: center;
+  padding-bottom: 0.5em; }
+.team a {
+  display: block;
+  text-align: right; }
+
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto; }
+
+img {
+  padding: 0.25em; }
+
 .widgets {
   background-color: #d9edf7; }
+  .widgets h2 {
+    padding: 0.5em 0em;
+    text-align: center; }
+  .widgets p {
+    margin: auto;
+    width: 95%;
+    margin: 0em 1em 1em 1em;
+    font-size: 0.9em; }
+  .widgets ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+  .widgets nav {
+    display: flex;
+    justify-content: center; }
+
+.widgets > a {
+  display: block;
+  text-align: right; }
+
+.glyphicon-headphones, .glyphicon-screenshot, .glyphicon-dashboard, .glyphicon-compressed, .glyphicon-knight {
+  font-size: 2em;
+  color: #333333; }
 
 .badge-notify {
   background-color: #337ab7;
-  color: #ffffff; }
+  color: #ffffff;
+  position: relative;
+  top: -20px;
+  left: -10px; }
 
 .order {
   background-color: #ffddcc; }
+
+.alert-warning {
+  text-align: center; }
 
 .order fieldset {
   box-sizing: border-box;
