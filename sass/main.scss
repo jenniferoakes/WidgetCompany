@@ -2,6 +2,11 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 @import 'variables';
+@import 'mixins';
 @import 'page.defaults';
 
-@import 'mobile';
+@import 'mobile.header';
+@import 'mobile.intro';
+@import 'mobile.ourwidget';
+@import 'mobile.yourorder';
+@import 'mobile.footer';

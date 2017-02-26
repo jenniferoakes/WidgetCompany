@@ -1,66 +1,70 @@
-/*
-Error: Invalid CSS after "...th #ffffff text": expected "{", was ""
-        on line 42 of sass/page.defaults.scss
-        from line 5 of sass/main.scss
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+html, body, header, main, footer, section, aside, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0; }
 
-37: 
-38: /*fieldset mixin *\/
-39: The fieldset header backgrounds and borders are #337ab7 with #ffffff text
-40: The button for the order form matches the "order" button in the top banner area
-41: The footer background is #000000 with #ffffff text
+ul {
+  margin: 0; }
 
-Backtrace:
-sass/page.defaults.scss:42
-sass/main.scss:5
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.4.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...th #ffffff text\": expected \"{\", was \"\"\A         on line 42 of sass/page.defaults.scss\A         from line 5 of sass/main.scss\A \A 37: \A 38: /*fieldset mixin */\A 39: The fieldset header backgrounds and borders are #337ab7 with #ffffff text\A 40: The button for the order form matches the \"order\" button in the top banner area\A 41: The footer background is #000000 with #ffffff text"; }
+body {
+  font-color: #333333; }
+
+header {
+  background-color: #000000; }
+  header .widgetco, header .fa-bars {
+    color: #ffffff; }
+  header .fa-home, header .fa-heart-o, header .fa-gift, header .fa-paper-plane {
+    color: #337ab7;
+    opacity: 0; }
+
+nav {
+  text-decoration: none; }
+  nav:hover {
+    background-color: #555555;
+    opacity: 1; }
+
+.home a:hover {
+  color: #ffffff;
+  opacity: 1; }
+
+nav:hover a {
+  opacity: 1; }
+
+.intro {
+  background-image: url(geometric.jpg);
+  background-size: 100% auto;
+  color: #ffffff;
+  text-align: center; }
+  .intro h2 {
+    padding: 0.5em; }
+
+.btn-success {
+  background-color: #5cb85c;
+  margin: 1em 0em 1.5em 0em; }
+  .btn-success:hover {
+    background-color: #449d44; }
+
+.widgets {
+  background-color: #d9edf7; }
+
+.badge-notify {
+  background-color: #337ab7;
+  color: #ffffff; }
+
+.order {
+  background-color: #ffddcc; }
+
+.order fieldset {
+  box-sizing: border-box;
+  border: 0.5em solid #337ab7; }
+
+.order legend {
+  background-color: #337ab7;
+  color: #ffffff; }
+
+footer {
+  background-color: #000000;
+  color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
