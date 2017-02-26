@@ -10,28 +10,24 @@
       <meta name='author' content='Jennifer Oakes'>
   </head>
   <body>
-    <header class='home'>
-        <h1>Widget Co</h1>
+    <header class='home' id='home'>
+        <h1 class='widgetco'>Widget Co</h1>
         <nav>
-            <ul>
-                <a href='#comments' class='fa fa-bars'></a>
-                <li><a href='#home' class="fa fa-home" aria-hidden="true">Home</a></li>
-                <li><a href='#team' class="fa fa-heart-o" aria-hidden="true">About Us</a></li>
-                <li><a href='#widgets' class="fa fa-gift" aria-hidden="true">Our Widgets</a></li>
-                <li><a href='#order' class="fa fa-paper-plane" aria-hidden="true">Place Order</a></li>
-            </ul>
+            <a href='#comments' class='fa fa-bars'></a>
+            <a href='#home' class="fa fa-home" aria-hidden="true">Home</a>
+            <a href='#team' class="fa fa-heart-o" aria-hidden="true">About Us</a>
+            <a href='#widgets' class="fa fa-gift" aria-hidden="true">Our Widgets</a>
+            <a href='#order' class="fa fa-paper-plane" aria-hidden="true">Place Order</a>
         </nav>
     </header>
 
     <section class='intro'>
       <h2>The Best Widgets</h2>
-            <p>We have the best widgets. They're amazing. You'll love them.</p>
-            <aside>
-                <input type='submit' value='Place Your Order Now!' class='btn btn-success'>
-            </aside>
+        <p>We have the best widgets. They're amazing. You'll love them.</p>
+        <a href='#ordernow' class='btn btn-success'>Place Your Order Now!</a>
     </section>
 
-    <section class='team'>
+    <section class='team' id='team'>
       <main>
         <h2>Leading Producer of Widgets</h2>
         <p>We produce a surplus of widgets.</p>
@@ -49,11 +45,11 @@
         </aside>
       </aside>
 
-      <a><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
+      <a href='#home'><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
 
     </section>
 
-    <section class='widgets'>
+    <section class='widgets' id='widgets'>
         <h2>Our Widgets</h2>
           <p>Below are some of our amazing widgets. You're going to love them.
             We have the best widgets. Be sure to look through all of the widgets
@@ -102,18 +98,20 @@
           </ul>
         </nav>
 
-        <a><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
+        <a href='#home'><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
 
       </aside>
     </section>
 
-    <section class='order'>
+    <section class='order' id='order'>
       <h2>Place Your Order</h2>
 
       <form action='http://requestb.in/11jvgtt1?inspect' method='posts'>
 
       <fieldset class='ItemDetails'>
-        <legend>Item Details</legend>
+        <span>
+          <legend>Item Details</legend>
+        </span>
 
             <aside>
               <label>Item Type</label>
@@ -137,11 +135,12 @@
                 <label><input type='radio' name='giftwrapbttn' value='no'>No</label>
                 <label><input type='radio' name='giftwrapbttn' value='yes'>Yes</label>
             </aside>
-
       </fieldset>
 
       <fieldset class='YourInfo'>
-          <legend>Your Info</legend>
+          <span>
+            <legend>Your Info</legend>
+          </span>
 
             <aside>
               <label for='fullName'>Full Name</label>
@@ -164,10 +163,10 @@
             </article>
         </fieldset>
 
-        <input type='submit' value='Confirm Order' class='btn btn-success'>
+        <input type='submit' id='ordernow' value='Confirm Order' class='btn btn-success'>
       </form>
 
-      <a><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
+      <a href='#home'><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
     </section>
 
     <footer>
