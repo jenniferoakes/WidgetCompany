@@ -110,12 +110,12 @@
 
       <fieldset class='ItemDetails'>
         <span>
-          <legend>Item Details</legend>
+          <legend class='formtitle'>Item Details</legend>
         </span>
 
             <aside>
               <label>Item Type</label>
-              <select>
+              <select class='input'>
                 <option>Select A Widget</option>
                 <option>Great Widget</option>
                 <option>Awesome Widget</option>
@@ -127,7 +127,7 @@
 
             <aside>
               <label for='widgetquantity'>Quantity</label>
-              <input type='text' name='widgetquantity' id='widgetquantity' placeholder='4' min='1' max='4'>
+              <input class= 'input' type='text' name='widgetquantity' id='widgetquantity' placeholder='4' min='1' max='4'>
             </aside>
 
             <aside>
@@ -139,32 +139,32 @@
 
       <fieldset class='YourInfo'>
           <span>
-            <legend>Your Info</legend>
+            <legend class='formheader'>Your Info</legend>
           </span>
 
             <aside>
               <label for='fullName'>Full Name</label>
-              <input type='text' id='fullName' placeholder='John Doe' required>
+              <input class='input' type='text' id='fullName' placeholder='John Doe' required>
             </aside>
 
             <aside>
               <label for='email'>Email</label>
-              <input type='email' id='email' placeholder='jordan@joe.com' required>
+              <input class='input' type='email' id='email' placeholder='jordan@joe.com' required>
             </aside>
 
             <aside>
               <label for='creditcard'>Credit Card</label>
-              <input type='text' id='creditcard' placeholder='XXXX-XXXX-XXXX-XXXX' required>
+              <input class='input' type='text' id='creditcard' placeholder='XXXX-XXXX-XXXX-XXXX' required>
             </aside>
 
             <aside>
               <label for='expiration'>Expiration</label>
-              <input type='month' id='expiration' placeholder='February 2017' required>
+              <input class='input' type='month' id='expiration' placeholder='February 2017' required>
             </article>
         </fieldset>
-
-        <input type='submit' id='ordernow' value='Confirm Order' class='btn btn-success'>
       </form>
+
+      <span class='ordernow'><input type='submit' id='ordernow' value='Confirm Order' class='btn btn-success'></span>
 
       <a href='#home'><i class="glyphicon glyphicon-chevron-up"></i>go to top</a>
     </section>
