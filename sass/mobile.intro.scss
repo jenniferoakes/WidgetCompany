@@ -1,0 +1,23 @@
+.intro {
+  background-image: url(geometric.jpg);
+  background-size: 100% auto;
+  color: $IntroTextColor;
+  text-align: center;
+  padding-bottom: 1em;
+
+  p {
+    padding-bottom: 1em;
+  }
+
+  h2 {
+    padding: 0.5em;
+  }
+}
+
+.btn-success {
+  background-color: $PlaceOrderBttnColor;
+
+  &:hover {
+    background-color: $PlaceOrderHoverBttnColor;
+  }
+}

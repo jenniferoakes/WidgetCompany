@@ -1,0 +1,50 @@
+.widgets {
+  background-color: $WidgetSectionBkgrdColor;
+
+  h2 {
+    padding: 0.5em 0em;
+    text-align: center;
+  }
+
+  p {
+    margin: auto;
+    width: $ParagraphWidth;
+    margin: $ParagraphMarginWidth;
+    font-size: $ParagraphFontSize;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 2em;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.widgets > a {
+    display: block;
+    text-align: right;
+  }
+
+.glyphicon-headphones, .glyphicon-screenshot, .glyphicon-dashboard, .glyphicon-compressed, .glyphicon-knight {
+  font-size: 2em;
+  color: $FontMainColor;
+}
+
+.badge-notify {
+  background-color: $GlyphiconsBkgrdColor;
+  color: $GlyphiconsTextColor;
+  position: relative;
+  top: -20px;
+  left: -10px;
+}
+
+.alert-warning {
+  text-align: center;
+}

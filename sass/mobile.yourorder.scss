@@ -1,0 +1,43 @@
+.order {
+  background-color: $OrderSectionBkgrdColor;
+
+  h2 {
+    padding: 0.5em 0em;
+    text-align: center;
+  }
+
+  fieldset{
+    box-sizing: border-box;
+    border: 0.5em solid $FieldSetHeaderBorderColor;
+    margin: 1em;
+    background-color: white;
+  }
+
+  legend {
+    background-color: $FieldSetHeaderBkgrdColor;
+    color: $FieldSetFontColor;
+  }
+}
+
+.input {
+  border-color: 1px solid #fefefe;
+}
+
+.ordernow {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.order > a {
+    display: block;
+    text-align: right;
+  }
+
+.formtitle {
+  text-align: center;
+}
+
+.formheader {
+  text-align: center;
+}
